@@ -79,6 +79,24 @@ int main(){
 										ada+=0;
 									}
 									cek = 0;
+									
+										// diagonal kiri atas
+									
+									for(int p=0;p<p_kata;p++){
+										if(input[p] == findword[i-p][j]){
+											cek=p;
+										}
+										else{
+											break;
+										}
+									}
+									if(cek == p_kata-1){
+										kata_ada +=1;
+									}
+									else{
+										kata_ada+=0;
+									}
+									cek = 0;
 						}
 					}
 				}
