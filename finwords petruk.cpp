@@ -38,7 +38,7 @@ int main(){
 						for(int j=0;j<15;j++){      //kolom
 							if (input[0]== findword[i][j]){
 								
-								// kanan kanan
+								//  kanan
 								for(int p=0;p<=p_kata;p++){
 								
 								if(input[p] == findword[i][j+p]){
@@ -48,16 +48,42 @@ int main(){
 							}if(cek==p_kata-1){kata_ada =1;
 							}else{kata_ada =0;
 							}cek = 0;
+							
+							//kiri
+							
+							
+								for(int p=0;p<=p_kata;p++){
+										if(input[p] == findword[b][k-p]){
+											cek =p;
+										}else{
+											break;
+										}
+									}
+									if(cek == p_kata-1){
+										ada +=1;
+									}else{
+										ada +=0;
+									} cek = 0;
+									
+									// bawah 
+									for(int p=0;p<=p_kata;p++){
+										if(input[p] == word[b+p][k]){
+											cek =p;
+										}else{
+											break;
+										}
+									}
+									if(cek == p_kata-1){
+										ada+=1;
+									}else{
+										ada+=0;
+									}
+									cek = 0;
 						}
 					}
 				}
 			}
 							
-							if(kata_ada>0){
-								cout<<"ada"<<endl;
-								}else{
-								cout<<"tidak ada"<<endl;
-							}
 							
 							
 						
