@@ -1,5 +1,3 @@
-//referensi : http://journal.uii.ac.id/Snati/article/viewFile/1604/1379
-
 #include <iostream>
 #include <cstring>
 #include "findwords.cpp"
