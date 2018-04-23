@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <cstring>
-#include "findwords.cpp"
+#include "findwords.h"
 
 using namespace std;
 
